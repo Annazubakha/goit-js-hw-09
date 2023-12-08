@@ -48,6 +48,7 @@ function convertMs(ms) {
 refs.startBtn.addEventListener('click', onStartBtnClick);
 
 function onStartBtnClick() {
+  refs.startBtn.setAttribute('disabled', '');
   intervalId = setInterval(() => {
     const delta = selectedDate - new Date();
     if (delta <= 0) {

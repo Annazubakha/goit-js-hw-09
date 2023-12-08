@@ -31,6 +31,6 @@ function createPromise(position, delay) {
       } else {
         reject(object);
       }
-    });
-  }, delay);
+    }, delay);
+  });
 }
